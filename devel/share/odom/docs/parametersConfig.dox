@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~odom_mode" : \b [int] Odometry method min: -2147483648, default: 0, max: 2147483647
+- \b "~data_read" : \b [int] Data for velocity calculation min: -2147483648, default: 1, max: 2147483647
+

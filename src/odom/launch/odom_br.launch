@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- WORKING NODES -->
+	<node pkg="odom" type = "odom_node" name = "odom_node" output = "screen"/>
+	<node pkg="odom" type = "wheels_node" name = "wheels_node"/>
+ 	<node pkg="odom" type = "broadcaster_node" name = "broadcaster_node"/>
+
+
+ 	<!-- CONFIGURATIONS -->
+ 	<node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" output = "screen" />
+ 	<arg name="rviz" value="true"/>
+  	<node if="$(arg rviz)" pkg="rviz" type="rviz" name="$(anon rviz)" respawn="false" args="-d $(find odom)/cfg/rviz/odom_br.rviz" />
+
+</launch>

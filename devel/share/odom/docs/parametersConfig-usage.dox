@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="odom_omni" pkg="odom" type="odom_omni">
+  <param name="odom_mode" type="int" value="0" />
+  <param name="data_read" type="int" value="1" />
+</node>
+\endverbatim
+
