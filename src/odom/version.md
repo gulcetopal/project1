@@ -1,6 +1,6 @@
-## NOTES
+# NOTES
 
-# todo
+## todo
 
 - RPM ve ticksi array olarak tanımla
 - transform rad-deg, terimsel yaz
@@ -8,18 +8,18 @@
 
 ---
 
-# v1
+### v1
 - Pose, rpm ve ticks callbackleri eklendi
 
 ---
 
-# v2 
+### v2 
 - Teker hızı, teker açısal hızı ve ticks'ten gelen RPM hesabı eklendi
 - Veri eksiği var, hocanın yanıtına göre düzenlenecek
 
 ---
 
-# v3 
+### v3 
 - RPM hesabı cmd_velden alınacak şekilde düzeltildi, sonuçlar yakın, TPR değeri unknown (approx 120)
 - RPM mesajı oluşturuldu, wheels_rpm ve cmd_vel publisherları eklendi
 - TF Broadcaster hem gerçek hem de hesaplanan odometri için
@@ -31,12 +31,12 @@ incelenecek!!!
 
 ---
 
-# v4
+### v4
 - Reset service eklendi
 
 ---
 
-# v5
+### v5
 - Omnidirectional kinematiği eklendi
 - Ticks datadan hız hesabı düzeltildi
 - Verilerin init değerleri eklendi
